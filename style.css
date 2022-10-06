@@ -1,0 +1,1594 @@
+@font-face {
+    font-family: Cooper;
+    src: url(./CooperLtBTWXXLight.ttf);
+}
+
+@font-face {
+    font-family: Sequel;
+    src: url(./SequelSansDisplay.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    position: relative;
+    overflow-x: hidden;
+}
+
+#nav{
+    width: 100vw;
+    height: 90px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 9999;
+}
+
+#nav h1{
+    font-family: Cooper;
+    font-weight: 100;
+    position: relative;
+    
+}
+
+#nav h1::after{
+    content: "";
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #00EB8F;
+    position: absolute;
+    bottom: 16%;
+    right: -3%;
+}
+
+#part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav #part2 a{
+    font-family: Sequel;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    margin: 0 20px;
+}
+
+#nav #part2 a:hover{
+    border-bottom: 2px solid #00EB8F;
+}
+
+#menu{
+    height: 40px;
+    width: 40px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+#line1{
+    height: 2px;
+    width: 35px;
+    background-color: #000;
+    margin-bottom: 6px;
+    transition: all ease .5s;
+    /* transform: rotate(-45deg);
+    transform-origin: 50% 0%; */
+}
+
+#line2{
+    right: 0;
+    height: 2px;
+    width: 25px;
+    background-color: #000;
+    margin-bottom: 6px;
+    /* display: none; */
+
+}
+
+#line3{
+    transition: all ease .5s;
+    height: 2px;
+    width: 15px;
+    background-color: #000;
+    /* transform: rotate(45deg);
+    transform-origin: 80% 50%; */
+
+}
+
+#nav #part2 a:nth-last-child(1){
+    border: 0.5px solid #000;
+    position: relative;
+    padding: 2px 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#nav #part2 a:nth-last-child(1):hover #hara{
+    right: 0;
+}
+
+#hara{
+    position: absolute;
+    background-color: #00EB8F;
+    width: 100%;
+    height: 100%;
+    right: 100%;
+    top: 0;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+#nav #part2 a:nth-last-child(1) img{
+    height: 5vh;
+    margin-left: 10px;
+}
+
+#responsive-menu a{
+    display: none;
+}
+
+
+#page1{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+
+#page1 h1{
+    width: 50%;
+    text-align: center;
+    font-size: 11vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: cooper;
+    font-weight: 100;
+    z-index: 99;
+}
+
+#page1 h1::after{
+    content: "";
+    width: 42%;
+    height: 15px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    position: absolute;
+    bottom: -2%;
+    left: 29%;
+}
+
+#page1>img:hover{
+    margin-top: -10px;
+}
+
+#page1 #img1{
+    position: absolute;
+    height: 380px;
+    top: 22%;
+    left: 5%;
+    transition: margin ease 0.5s;
+}
+
+#page1 #img2{
+    height: 210px;
+    position: absolute;
+    right: 27%;
+    top: 22%;
+    transition: margin ease 0.5s;
+}
+
+#page1 #img3{
+    height: 220px;
+    position: absolute;
+    right: 9%;
+    top: 50%;
+    transition: margin ease 0.5s;
+}
+
+#btncenter{
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+#btncenter a #hara{
+    position: absolute;
+    background-color: #00EB8F;
+    width: 100%;
+    height: 100%;
+
+}
+#btncenter h2{
+    font-family: Sequel;
+    opacity: .8;
+    font-weight: 400;
+}
+
+#btncenter a{
+    position: relative;
+    border: .5px solid #000;
+    padding: 1px 20px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#btncenter a:hover #hara{
+    right: 0;
+}
+
+#btncenter a img{
+    height: 4vh;
+    margin-top: 4px;
+}
+
+#page2{
+    height: 75vh;
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#page2 h3{
+    font-family: Sequel;
+    font-weight: 100;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#page2 h3::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #00EB8F;
+    left: -5%;
+    top: 30%;
+}
+
+#page2 h1{
+    font-size: 48px;
+    width: 70%;
+    font-family: Cooper;
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+}
+
+#page2 h1::after{
+    content: "";
+    height: 83px;
+    width: 25%;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    background-size: cover;
+    position: absolute;
+    bottom: -6%;
+    left: 36%;
+
+}
+
+#page2 #about-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+#page2 #about-us h4{
+    font-size: 25px;
+    font-family: Sequel;
+    font-weight: 100;
+}
+
+#about-us a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    padding: 0 15px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+#about-us a img{
+   height: 35px;
+   z-index: 2;
+}
+
+#about-us a #hara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: #00EB8F;
+    z-index: 1;
+}
+
+#about-us a:hover #hara{
+    left: 0;
+}
+
+#page3{
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+}
+
+#page3-left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+
+}
+
+#page3-left-left{
+    width: 22%;
+    height: 100%;
+    margin-right: 25px;
+}
+
+#page3-left-left img:nth-child(1){
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+#page3-left-left img:nth-child(2){
+    width: 100%;
+    height: 30%;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+#page3-left-right{
+    width: 78%;
+    height: 100%;
+}
+
+#page3-left-right img:nth-child(1){
+    width: 70%;
+    height: 30%;
+    object-fit: cover;
+}
+
+#page3-left-right img:nth-child(2){
+    width: 100%;
+    height: 65%;
+    margin-top: 28px;
+    object-fit: cover;
+}
+
+#page3-right{
+    height: 100%;
+    width: 50%;
+    padding: 80px;
+
+}
+
+#page3-right h1{
+    font-size: 50px;
+    font-family: Cooper;
+    width: 75%;
+    font-weight: 300;
+    position: relative;
+}
+
+#page3-right h1::after{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 53%;
+    /* background-color: red; */
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    top: 27%;
+    left: 30%;
+}
+
+#page3-right p{
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 2;
+    width: 85%;
+    font-family: Sequel;
+}
+
+#services{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: Sequel;
+    margin-top: 25px;
+}
+
+#services>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#services a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 2px 15px;
+    border-radius: 50px;
+    gap: 10px;
+    overflow: hidden;
+    transition: left ease 0.4s;
+
+}
+
+#services a img{
+    height: 35px;
+    margin-top: 3px;
+}
+
+#services a #hara{
+    left: -100%;
+}
+
+#services a:hover #hara{
+    left: 0;
+}
+
+#page4{
+    width: 100vw;
+    height: 130vh;
+    position: relative;
+}
+
+#page4-h1{
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    margin-top: 40px;
+
+}
+
+#page4-h1 h1{
+    font-size: 45px;
+    position: relative;
+    width: 65%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: Cooper;
+    font-weight: 100;
+}
+
+#page4-h1 h1::after{
+    content: "";
+    position: absolute;
+    height: 65px;
+    width: 15%;
+    top: -3%;
+    left: 16%;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+}
+
+#page4 #logos{
+    width: 100%;
+    height: 80%;
+    padding: 20px 100px;
+    display: inline-block;
+    line-height: 9;
+    text-align: center;
+}
+
+#page4 #logos img{
+    height: 45px;
+    white-space: nowrap;
+    margin-right: 60px;
+}
+
+#page5{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; */
+}
+#page5 #page5-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#page5 #left-image{
+    cursor: pointer;
+    padding: 30px;
+    height: 65vh;
+    width: 85vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.824)
+        ),url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/Golf.jpeg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1635867985&s=5e7cee6801a656523b56b64a34d04786);
+        background-size: cover;
+}
+
+#page5 #left-image:hover #hara{
+    left: 0;
+}
+
+
+#page5 #left-image>img{
+    margin-bottom: 60px;
+    height: 45px;
+}
+
+#page5 #left-image h2{
+    color: #fff;
+    font-family: Cooper;
+    font-size: 35px;
+    font-weight: 100;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#page5 #case-study{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-family: Sequel;
+}
+
+#page5 #case-study h3{
+    font-weight: 100;
+}
+
+#page5 #case-study a{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+    padding: 1px 15px;
+    border-radius: 50px;
+}
+
+#page5 #case-study a img{
+    height: 35px;
+    z-index: 99;
+}
+
+#page5 #case-study a #hara{
+    position: absolute;
+    z-index: 9;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00EB8F;
+}
+
+#page5 #right-image{
+    cursor: pointer;
+    padding: 30px;
+    height: 65vh;
+    width: 85vh;
+    background:linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.568)
+        ),url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/work-thumbnail-03.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1627573623&s=efbebf8d2134c057c66886c970e18069);
+        background-size: cover;
+}
+
+#page5 #right-image:hover #hara{
+    left: 0;
+}
+
+
+#page5 #right-image>img{
+    margin-bottom: 105px;
+    height: 45px;
+}
+
+#page5 #right-image h2{
+    color: #fff;
+    font-family: Cooper;
+    font-size: 35px;
+    font-weight: 100;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+#page5 #case-study{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-family: Sequel;
+}
+
+#page5 #case-study h3{
+    font-weight: 100;
+}
+
+#page5 #case-study a{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+    padding: 1px 15px;
+    border-radius: 50px;
+}
+
+#page5 #case-study a img{
+    height: 35px;
+    z-index: 99;
+}
+
+#page5 #case-study a #hara{
+    position: absolute;
+    z-index: 9;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00EB8F;
+}
+
+#page5 #see-more{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#page5 #see-more a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 20px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-family: Sequel;
+    border-radius: 50px;
+    overflow: hidden;
+    
+}
+
+#page5 #see-more a #hara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+}
+
+#page5 #see-more a:hover #hara{
+    left: 0;
+}
+
+#page5 #see-more a img{
+    height: 5vh;
+}
+
+
+#page5 #see-more h3{
+    font-family: Sequel;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+#page5 #see-more>img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#page6{
+    height: 100vh;
+    width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.swiper-slide img {
+    display: block;
+    height: 10vh;
+    object-fit: cover;
+}
+
+.swiper-slide:nth-child(2) img{
+    height: 3vh;
+}
+
+.swiper-slide:nth-child(3) img{
+    height: 7vh;
+}
+
+.swiper-slide:nth-child(4) img{
+    height: 5vh;
+}
+
+.swiper-slide:nth-child(2) h3::before{
+    left: -10%;
+}
+
+.swiper-slide:nth-child(3) h3::before{
+    left: -15%;
+}
+
+.swiper-slide:nth-child(4) h3::before{
+    left: -8%;
+}
+
+.swiper-slide:nth-child(5) h3::before{
+    left: 17%;
+}
+
+.swiper-slide p{
+    font-size: 9vh;
+    width: 70%;
+    font-family: Cooper;
+}
+
+.directors h3{
+    position: relative;
+   font-size: 3vh;
+   font-family: Sequel;
+   font-weight: 100;
+
+}
+
+.directors h3::before{
+    content: "";
+    position: absolute;
+    height: 2vh;
+    width: 2vh;
+    border-radius: 50%;
+    left: -5%;
+    top: 25%;
+    background-color: #00EB8F;
+}
+
+.directors h2{
+    font-family: Sequel;
+   font-size: 3vh;
+   opacity: 0.7;
+}
+
+#page7{
+    width: 100%;
+    height: 150vh;
+    position: relative;
+}
+
+#page7 #last-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Sequel;
+    z-index: 4;
+    text-align: center;
+    width: 140vh;
+    height: 60vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.509),
+        rgba(0, 0, 0, 0.521)
+    ),url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-239.jpg?w=1200&h=394&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002673&s=a8225dd79a8eb0d05ce0db6b2a5efd03);
+    background-size: cover;
+    background-position: center;
+}
+
+#page7 #last-image p{
+    position: relative;
+    z-index: 99;
+    font-size: 5vh;
+    width: 80%;
+    font-weight: 100;
+    color: #fff;
+    /* padding: 80px; */
+    font-family: Cooper;
+}
+
+#page7 #last-image p::before{
+    content: "";
+    width: 15vh;
+    height: 1.5vh;
+    top: 30%;
+    left: 15%;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    position: absolute;
+}
+
+#page7 #last-image #sound-good{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#page7 #last-image #sound-good h3{
+    color: #fff;
+    font-size: 4vh;
+    font-weight: 100;
+}
+
+#page7 #last-image #sound-good a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+    padding: 2px 15px;
+    border-radius: 50px;
+    gap: 10px;
+}
+
+#page7 #last-image #sound-good a #hara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+}
+
+#page7 #last-image #sound-good a:hover #hara{
+    left: 0;
+}
+
+#page7 #last-image #sound-good img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#page7 #page7-bottom{
+    position: relative;
+    bottom: 20%;
+    width: 100%;
+    height: 120vh;
+    background-color: #000;
+
+}
+
+#page7 #page7-bottom #btm-container{
+    position: absolute;
+    width: 100%;
+    bottom: 27%;
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    padding: 0px 80px;
+    justify-content: space-around;
+    /* background-color: royalblue; */
+    
+
+}
+
+#page7 #page7-bottom #btm-container #first{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#page7 #page7-bottom #btm-container #first h2{
+    position: relative;
+    font-size: 7vh;
+    font-family: Cooper;
+    font-weight: 100;
+    width: 50%;
+}
+
+#page7 #page7-bottom #btm-container #first h2::after{
+    content: "";
+    position: absolute;
+    width: 28vh;
+    height: 10vh;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    background-size: cover;
+    top: 32%;
+    left: -6%;
+}
+
+#page7 #page7-bottom #btm-container #first a{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Sequel;
+    font-size: 4vh;
+}
+
+#page7 #page7-bottom #btm-container #first a img{
+    position: relative;
+    height: 6vh;
+    border: 1px solid #fff;
+    padding: 0px 15px;
+    border-radius: 50px;
+    overflow: hidden;
+    z-index: 9;
+}
+
+#page7 #page7-bottom #btm-container #first a #lets-talk-image{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#page7 #page7-bottom #btm-container #first a #lets-talk-image #hara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: #00EB8F;
+    z-index: 2;
+}
+
+#page7 #page7-bottom #btm-container #first a:hover #lets-talk-image #hara{
+    left: 0;
+}
+
+#page7 #page7-bottom #btm-container #second{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#page7 #page7-bottom #btm-container #second h3{
+    font-size: 4vh;
+    font-family: Sequel;
+    font-weight: 100;
+}
+
+#page7 #page7-bottom #btm-container #second h4{
+    font-size: 3vh;
+    opacity: .6;
+    font-family: Sequel;
+    font-weight: 100;
+}
+
+#page7 #page7-bottom #btm-container #third{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#page7 #page7-bottom #btm-container #third img:nth-child(1){
+    height: 60px;
+}
+
+#page7 #page7-bottom #btm-container #third img:nth-child(2){
+    height: 100px;
+}
+
+#page7 #page7-bottom #btm-container #third img:nth-child(3){
+    height: 40px;
+}
+
+#page7 #policy{
+    border-top: 1px solid #fff;
+    font-family: Sequel;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /* background-color: #00EB8F; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 2.3vh;
+}
+
+#page7 #policy i{
+    font-size: 4vh;
+}
+
+#page7 #policy h2{
+    position: relative;
+    margin-right: 50px;
+    font-family: Cooper;
+    font-weight: 100;
+}
+
+#page7 #policy h2::after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    bottom: 15%;
+    right: -5%;
+    background-color: #00EB8F;
+}
+
+#page7 #policy a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#page7 #policy #last-p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* font-size: 2vh; */
+}
+    
+@media (max-width: 600px){
+
+    #menu{
+        display: flex;
+    }
+
+    #responsive-menu{
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+        width: 100vw;
+        height: 80vh;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        top: -100%;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #responsive-menu a{
+        display: flex;
+        z-index: 9999;
+        text-decoration: none;
+        color: #000;
+        font-family: Cooper;
+    }
+    
+    #responsive-menu a:nth-last-child(1){
+        border: 1px solid #000;
+        padding: 2px 10px;
+        border-radius: 50px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #responsive-menu a:nth-last-child(1) img{
+        height: 25px;
+    }
+    
+
+    #page1 #img1{
+        top: 30%;
+        height: 420px;
+        width: 100vw;
+        left: 0;
+        position: relative;
+        
+    }
+
+    #page1 #img2{
+        display: none;
+    }
+    
+    #page1 #img3{
+        display: none;
+    }
+
+    #page1 h1{
+        position: relative;
+        width: 80%;
+        font-size: 4vh;
+        top: 20%;
+        
+    }
+    
+    #page1 h1::after{
+        width: 40%;
+        height: 9px;
+        bottom: -7%;
+        left: 30%;
+    }
+
+    #nav{
+        padding: 0 10px;
+        height: 60px;
+    }
+
+    #nav h1{
+        font-size: 25px;
+        
+    }
+    
+    #nav h1::after{
+        content: "";
+        height: 2px;
+        width: 2px;
+    }
+
+    #nav #part2 a{
+        display: none;
+    }
+
+    #nav #part2 a:nth-last-child(2){
+        display: flex;
+        font-size: 30px;
+    }
+
+    #nav #part2 a:nth-last-child(1){
+        display: none;
+    }
+
+    #btncenter{
+        position: relative;
+        top: -40%;
+    }
+
+    #btncenter h2{
+        font-size: 15px;
+        opacity: 1;
+    }
+
+    #btncenter a img{
+        height: 3vh;
+    }
+
+    #page2{
+        position: relative;
+        height: 60vh;
+    }
+
+    #page2 h3{
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        font-size: 13px;
+        width: 75%;
+    }
+
+    #page2 h1{
+        position: absolute;
+        font-size: 20px;
+        top: 30%;
+    }
+
+    #page2 #about-us{
+        position: absolute;
+        bottom: 20%;
+    }
+
+    #page2 #about-us h4{
+        font-size: 15px;
+    }
+
+    #page2 #about-us a img{
+        height: 20px;
+        
+    }
+
+    #page2 h1::after{
+        width: 35%;
+        top: 55%;
+        left: 43%;
+        height: 35px;
+    }
+
+    #page3{
+        height: 120vh;
+        flex-direction: column;
+    }
+
+    #page3 #page3-left{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    #page3 #page3-left #page3-left-left img{
+        height: 200px;
+        
+    }
+
+    #page3 #page3-right{
+        width: 100%;
+        margin-top: 40px;
+        padding: 10px 20px;
+    }
+
+    #page3 #page3-right h1{
+        font-size: 25px;
+        width: 80%;
+        left: 0;
+    }
+
+    #page3-right h1::after{
+        width: 35%;
+        height: 10px;
+        top: 40%;
+        left: 22%;
+    }
+
+    #page3-right p{
+        font-size: 13px;
+        line-height: 1.6;
+        width: 90%;
+    }
+
+    #services>img{
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+    }
+
+    #services h3{
+        font-size: 12px;
+    }
+
+    #services a{
+        font-size: 10px;
+    }
+
+    #services a img{
+        height: 20px;
+    }
+
+    #page4{
+        /* margin-top: 180px; */
+        position: relative;
+    }
+
+    #page4-h1 h1{
+        width: 80%;
+        font-size: 25px;
+    }
+
+    #page4-h1 h1::after{
+        width: 25%;
+        height: 40px;
+        left: 37%;
+    }
+
+    #page4 #logos{
+        width: 90%;
+        padding: 0px 5px;
+    }
+
+    #page4 #logos img{
+        height: 30px;
+        margin-right: 0px;
+        margin-left: 60px;
+    }
+
+    #page5{
+        /* margin-top: 400px; */
+        position: relative;
+        width: 100%;
+        height: 180vh;
+    }
+
+    #page5 #page5-images{
+        top: 15%;
+        flex-direction: column;
+        padding: 0 50px;
+    }
+
+    #page5 #page5-images{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+
+    #page5 #left-image{
+        position: relative;
+        height: 250px;
+        width: 320px;
+    }
+
+    #page5 #left-image>img{
+        margin-bottom: 50px;
+        height: 30px;
+    }
+    
+    #page5 #left-image h2{
+        font-size: 20px;
+    }
+    
+    #page5 #case-study{        
+        font-size: 10px;
+    }
+    
+    #page5 #case-study h3{
+        font-weight: 100;
+    }
+    
+    #page5 #case-study a img{
+        height: 20px;
+        z-index: 99;
+    }
+
+    #page5 #right-image{
+        position: relative;
+        height: 250px;
+        width: 320px;
+    }
+
+    #page5 #right-image>img{
+        margin-bottom: 50px;
+        height: 30px;
+    }
+    
+    #page5 #right-image h2{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    
+    #page5 #case-study{        
+        font-size: 10px;
+    }
+    
+    #page5 #case-study h3{
+        font-weight: 100;
+    }
+    
+    #page5 #case-study a img{
+        height: 20px;
+        z-index: 99;
+    }
+
+    #page5 #see-more{
+        display: flex;
+        align-items: center;
+        /* gap: -40px; */
+        width: 100%;
+        padding: 0 40px;
+        bottom: 0%;
+        /* background-color: red; */
+    }
+    
+    #page5 #see-more a{
+        padding: 3px 12px;
+        width: 350px;
+    }
+    
+    
+    #page5 #see-more a img{
+        height: 4vh;
+    }
+    
+    
+    #page5 #see-more h3{
+        font-size: 15px;
+        width: 100%;
+    }
+    
+    #page5 #see-more>img{
+        height: 40px;
+        width: 40px;
+    }
+    
+    #page6{
+        position: relative;
+    }
+
+    .swiper-slide p{
+        font-size: 4vh;
+        width: 90%;
+    }
+
+    #page7{
+        position: relative;
+        height: 130vh;
+    }
+
+    #page7 #last-image{
+        width: 50vh;
+        height: 40vh;
+    }
+
+    #page7 #last-image p{
+        position: absolute;
+        top: 5%;
+        font-size: 3vh;
+    }
+
+    #page7 #page7-bottom{
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    
+    #page7 #last-image #sound-good{
+        position: absolute;
+        bottom: 10%;
+        padding: 0 20px;
+    }
+    
+    #page7 #last-image #sound-good h3{
+        font-size: 2vh;
+    }
+
+    #page7 #last-image #sound-good img{
+        height: 30px;
+        width: 30px;
+    }
+
+    #page7 #last-image p::before{
+        width: 10vh;
+        top: 22%;
+    }
+
+    #page7 #page7-bottom #btm-container{
+        top: 30%;
+    }
+
+    #page7 #page7-bottom #btm-container #first{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        /* gap: 30px; */
+    }
+    
+    #page7 #page7-bottom #btm-container #first h2{
+        position: relative;
+        font-size: 4vh;
+    }
+    
+    #page7 #page7-bottom #btm-container #first h2::after{
+        width: 18vh;
+        height: 6vh;
+        top: 47%;
+        left: -20%;
+    }
+
+
+    
+    #page7 #page7-bottom #btm-container #first a{
+        font-size: 2vh;
+        width: 150%;
+    }
+    
+    #page7 #page7-bottom #btm-container #first a img{
+        height: 3vh;
+        padding: 0px 13px;
+    }
+
+    #page7 #page7-bottom #btm-container #second h3{
+        font-size: 1vh;
+    }
+
+    #page7 #page7-bottom #btm-container #second h4{
+        font-size: 1vh;
+    }
+
+    #page7 #page7-bottom #btm-container #third img:nth-child(1){
+        height: 20px;
+    }
+
+    #page7 #page7-bottom #btm-container #third img:nth-child(2){
+        height: 20px;
+    }
+
+    #page7 #page7-bottom #btm-container #third img:nth-child(3){
+        height: 20px;
+    }
+
+    #page7 #policy{
+        flex-direction: column;
+        font-size: 2vh;
+    }
+
+    #page7 #policy h2{
+        margin-left: 50px;
+    }
+
+
+    
+    #page7 #policy i{
+        font-size: 2vh;
+    }
+    
+    
+    #page7 #policy a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    #page7 #policy #last-p{
+        font-size: 8px;
+       
+    }
+
+
+
+}
